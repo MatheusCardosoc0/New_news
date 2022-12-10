@@ -2,6 +2,7 @@ import React from 'react'
 import { Bars2Icon, Bars3Icon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import NavLinks from '../components/NavLinks'
+import Searchbox from '../components/Searchbox'
 
 const Header = () => {
   return (
@@ -24,6 +25,8 @@ const Header = () => {
       </div>
 
       <NavLinks />
+
+      <Searchbox />
     </header>
   )
 }

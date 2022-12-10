@@ -7,8 +7,10 @@ type NavLinksProps = {
 }
 
 const NavLink = ({category, isActive} : NavLinksProps) => {
+
   return (
-    <Link href={`/news/${category}`}>
+    <Link href={`/news/${category}`}
+    className={`navLink ${isActive && 'underline decoration-yellow-500'}`}>
       {category}
     </Link>
   )
